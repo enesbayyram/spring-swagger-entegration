@@ -25,9 +25,4 @@ public class SecurityConfig {
 		.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 		return http.build();
 	}
-	
-	public void configure(WebSecurity web) throws Exception {
-	   web.ignoring().requestMatchers("/swagger-ui/**", "/v3/api-docs/**");
-	}
-
 }
